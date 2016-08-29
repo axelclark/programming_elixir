@@ -1,8 +1,8 @@
-defmodule Sequence.Mixfile do
+defmodule SequenceSup.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :sequence,
+    [app: :sequence_sup,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
@@ -15,7 +15,7 @@ defmodule Sequence.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger],
-     mod: {Sequence, []}]
+     mod: {SequenceSup, []}]
   end
 
   # Dependencies can be Hex packages:
